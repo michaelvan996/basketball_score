@@ -1,0 +1,39 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="sub-container">
+                <h3 class="title">HOME</h3>
+                <p id="home-score" class="score">0</p>
+                <div class="add-btn-container">
+                    <button class="add-btn" onclick="homeAddBtn1()">+1</button>
+                    <button class="add-btn" onClick="homeAddBtn2()">+2</button>
+                    <button class="add-btn" onClick="homeAddBtn3()">+3</button>
+                </div>
+                <div class="minus-btn-container">
+                    <button class="minus-btn" onClick="homeMinusBtn1()">-1</button>
+                    <button class="minus-btn" onclick="homeMinusBtn2()">-2</button>
+                    <button class="minus-btn" onclick="homeMinusBtn3()">-3</button>
+                </div>
+            </div>
+            <button class="reset-btn" onClick="reset()">Reset</button>
+            <div class="sub-container">
+                <h3 class="title">GUEST</h3>
+                <p id="guest-score" class="score">0</p>
+                <div class="add-btn-container">
+                    <button class="add-btn" onClick="questAddBtn1()">+1</button>
+                    <button class="add-btn" onClick="questAddBtn2()">+2</button>
+                    <button class="add-btn" onclick="questAddBtn3()">+3</button>
+                </div>
+                <div class="minus-btn-container">
+                    <button class="minus-btn" onclick="guestMinusBtn1()">-1</button>
+                    <button class="minus-btn" onClick="guestMinusBtn2()">-2</button>
+                    <button class="minus-btn" onClick="guestMinusBtn3()">-3</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
